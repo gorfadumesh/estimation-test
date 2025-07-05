@@ -1,0 +1,186 @@
+body {
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.estimate-container {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #222;
+}
+
+.grand-total-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  gap: 10px;
+  padding: 24px 32px 0 0;
+  color: #222;
+}
+.grand-total-label {
+  color: #555;
+  margin-right: 8px;
+}
+.grand-total-value {
+  color: #4CAF50;
+}
+
+.section-block {
+  width: 100vw;
+  margin: 0;
+  background: #fafbfc;
+  padding-bottom: 16px;
+  color: #222;
+}
+.section-divider {
+  border: none;
+  border-top: 2px solid #e0e0e0;
+  margin: 0 0 8px 0;
+}
+.section-header-row {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 12px 32px 8px 0;
+  background: #f5f5f5;
+  gap: 10px;
+  color: #222;
+}
+.section-toggle {
+  font-size: 1.3rem;
+  margin-right: 8px;
+  color: #333;
+}
+.section-title {
+  flex: 1;
+  color: #222;
+}
+.section-total {
+  color: #4CAF50;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.table-scroll-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 420px;
+  background: #fff;
+  margin: 24px;
+  border-radius: 0;
+}
+
+.estimate-table {
+  width: 100%;
+  min-width: 0;
+  border-collapse: collapse;
+  background: #fff;
+  color: #222;
+  border: 2px solid #bbb;
+  margin: 0 auto;
+}
+.estimate-table th, .estimate-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1rem;
+  color: #222;
+  background: #fff;
+}
+.estimate-table th {
+  background: #f5f5f5;
+  font-weight: 700;
+  color: #222;
+  border-bottom: 2px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.row-even {
+  background: #fafbfc;
+}
+.row-odd {
+  background: #fff;
+}
+
+.qty-input, .unit-cost-input {
+  width: 70px;
+  padding: 4px 6px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  text-align: right;
+  color: #222;
+}
+.qty-input:focus, .unit-cost-input:focus {
+  outline: 2px solid #4CAF50;
+  background: #fff;
+}
+
+.estimate-table td:last-child, .estimate-table th:last-child {
+  text-align: center;
+  width: 40px;
+}
+.estimate-table td:nth-child(7) {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #4CAF50;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 32px 0 0;
+}
+.pagination button {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  color: #222;
+}
+.pagination button.active, .pagination button:hover {
+  background: #4CAF50;
+  color: #fff;
+  border-color: #4CAF50;
+}
+.pagination span {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 900px) {
+  .estimate-container {
+    width: 100vw;
+    margin: 0;
+  }
+  .section-block {
+    width: 100vw;
+    margin: 0;
+  }
+  .grand-total-row {
+    font-size: 1.2rem;
+    padding: 12px 8px 0 0;
+  }
+  .section-header-row {
+    padding: 8px 8px 8px 0;
+  }
+  .table-scroll-container {
+    max-height: 260px;
+    margin: 8px;
+  }
+}
